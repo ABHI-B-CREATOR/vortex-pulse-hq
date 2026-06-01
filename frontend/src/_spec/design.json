@@ -1,0 +1,88 @@
+{
+  "tokens": {
+    "colors": {
+      "accent": "#00fff7 (cyan)/#ff28e1 (magenta) gradient",
+      "primary": "#000000 (pure black)",
+      "scheme": "pure black with magenta/cyan gradients, runwayML cinematic",
+      "secondary": "#000717 (deep navy glass)"
+    },
+    "typography": {
+      "fontFamily": "Inter, Satoshi, sans-serif",
+      "fontType": "extra-bold display, regular for body"
+    },
+    "radii": {
+      "default": "pill (3rem+ on buttons/badges/cards)",
+      "full": "9999px",
+      "lg": "1rem",
+      "sm": "0.25rem"
+    },
+    "shadows": {
+      "default": "xxl for cards, inner for glass, magenta/cyan outer glows",
+      "lg": "0 8px 24px rgba(0,0,0,0.2)",
+      "md": "0 4px 12px rgba(0,0,0,0.15)",
+      "sm": "0 1px 3px rgba(0,0,0,0.1)"
+    },
+    "spacing": {
+      "2xl": "6rem",
+      "lg": "2rem",
+      "md": "1rem",
+      "sm": "0.5rem",
+      "xl": "4rem",
+      "xs": "0.25rem"
+    }
+  },
+  "shared_components": [
+    {
+      "name": "Header",
+      "path": "src/components/Header.jsx",
+      "purpose": "Branding and site navigation, persistent at top. Blur and gradient elevate cinematic look.",
+      "props": []
+    },
+    {
+      "name": "HeroSection",
+      "path": "src/components/HeroSection.jsx",
+      "purpose": "Portfolio's visual impact entry point, communicates expertise and theme.",
+      "props": []
+    },
+    {
+      "name": "ProjectsGrid",
+      "path": "src/components/ProjectsGrid.jsx",
+      "purpose": "Showcase of portfolio projects with rich interaction and visual hierarchy.",
+      "props": []
+    },
+    {
+      "name": "AboutSkillsSection",
+      "path": "src/components/AboutSkillsSection.jsx",
+      "purpose": "Personal and skills introduction conveying technical breadth and aesthetic consistency.",
+      "props": []
+    },
+    {
+      "name": "ContactSection",
+      "path": "src/components/ContactSection.jsx",
+      "purpose": "Easy and visually impactful user contact for project inquiries/feedback.",
+      "props": []
+    },
+    {
+      "name": "Footer",
+      "path": "src/components/Footer.jsx",
+      "purpose": "Site-wide legal/footer info; secondary nav for accessibility and SEO.",
+      "props": []
+    }
+  ],
+  "pages": [
+    {
+      "name": "Home",
+      "route": "/",
+      "file": "src/pages/Home.jsx",
+      "uses": [
+        "Header",
+        "HeroSection",
+        "ProjectsGrid",
+        "AboutSkillsSection",
+        "ContactSection",
+        "Footer"
+      ]
+    }
+  ],
+  "notes": "Design DNA: cinematic, glassmorphic, dark runwayML style; black canvas with animated magenta and cyan gradients, oversized display type (e.g., Satoshi, Inter, or custom bold sans), pill-shaped elements, glass blur, heavy shadow, extreme whitespace, pill buttons/inputs, section glass walls. Animation: Framer Motion: fade/scale-in, hover bounce, animated gradients, smooth scroll. Interaction: hover glows, glass blur, pill button bounce, motion-based transitions, animated section reveals. Color scheme: pure black with magenta/cyan gradients, runwayML cinematic."
+}
